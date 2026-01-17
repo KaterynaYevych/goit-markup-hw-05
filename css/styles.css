@@ -763,7 +763,6 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  fill: transparent;
   transition: fill var(--anim-main);
 }
 
@@ -773,7 +772,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
 
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 8px;
   cursor: pointer;
@@ -794,6 +793,7 @@ img {
   width: 16px;
   height: 16px;
   fill: transparent;
+  margin-right: 8px;
 
   border-radius: 2px;
   border: 1px solid var(--color-navy-blue-modal);
@@ -803,15 +803,12 @@ img {
     fill var(--anim-main);
 }
 
-.modal-checkbox:checked + .modal-checkbox-label > .modal-checkbox-icon-wrapper {
+.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon-wrapper {
   background-color: var(--color-ocean);
   border-color: var(--color-ocean);
-  fill: var(--color-ocean);
-  border: none;
-}
-
-.modal-checkbox:checked + .modal-checkbox-label .checkbox-icon {
   fill: var(--color-cloud);
+
+  border: none;
 }
 
 .modal-send-btn {

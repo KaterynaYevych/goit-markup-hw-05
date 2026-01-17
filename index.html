@@ -476,29 +476,31 @@
           </ul>
         </div>
 
-        <form class="mail-section">
-          <label class="footer-txt-social" for="e-mail">Subscribe</label>
-          <div class="footer-input-container">
-            <input
-              class="footer-input"
-              type="email"
-              id="e-mail"
-              placeholder="E-mail"
-            />
+        <div class="mail-section">
+          <p class="footer-txt-social">Subscribe</p>
+          <form class="footer-input-container">
+            <label class="footer-label" for="e-mail">
+              <input
+                class="footer-input"
+                type="email"
+                id="e-mail"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="btn-footer" type="submit">
               Subscribe
               <svg class="social-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="modal-overlay is-open">
       <div class="modal">
-        <button class="btn-close" type="reset">
+        <button class="btn-close" type="button">
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -507,12 +509,12 @@
 
         <form class="modal-form">
           <div class="form-input-container">
-            <label class="input-label" for="username">Name</label>
+            <label class="input-label" for="user-name">Name</label>
             <div class="input-wrapper">
               <input
                 class="input"
-                id="username"
-                name="username"
+                id="user-name"
+                name="user-name"
                 type="text"
                 autofocus
                 required
@@ -556,13 +558,12 @@
           </div>
 
           <div class="form-input-container">
-            <label class="input-label" for="comment">Comment</label>
+            <label class="input-label" for="user-comment">Comment</label>
             <textarea
               class="modal-text-area"
-              id="comment"
-              name="comment"
-              rows="0"
-              cols="0"
+              id="user-comment"
+              name="user-comment"
+              rows="3"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -571,12 +572,13 @@
             <input
               class="modal-checkbox visually-hidden"
               type="checkbox"
-              name="user-policy"
-              id="user-policy"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               required
             />
 
-            <label class="modal-checkbox-label" for="user-policy">
+            <label class="modal-checkbox-label" for="user-privacy>
               <span class="modal-checkbox">
                 <svg class="checkbox-icon" height="8" width="10">
                   <use href="./images/icons.svg#icon-check"></use>
